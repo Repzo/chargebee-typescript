@@ -1,50 +1,50 @@
 {
-   "name": "chargebee-typescript",
-   "version": "2.5.0",
-   "description": "A library in typescript for integrating with Chargebee.",
-   "keywords": [
-      "payments",
-      "billing",
-      "subscription",
-      "chargebee",
-      "chargebee-typescript"
-   ],
-   "homepage": "http://github.com/chargebee/chargebee-typescript",
-   "author": "Navaneedhan <navaneedhan@chargebee.com> (https://www.chargebee.com)",
-   "main": "lib/chargebee.js",
-   "types": "lib/chargebee.d.ts",
-   "files": [
-      "lib/**/*"
-   ],
-   "scripts": {
-      "tsc": "tsc --pretty"
-   },
-   "dependencies": {
-      "q": ">=1.0.1"
-   },
-   "devDependencies": {
-      "@types/node": "^13.13.52",
-      "@types/q": "^1.5.2",
-      "typescript": "^3.9.3"
-   },
-   "directories": {
-      "lib": "./lib"
-   },
-   "repository": {
-      "type": "git",
-      "url": "http://github.com/chargebee/chargebee-typescript.git"
-   },
-   "engines": {
-      "node": ">=8.0.0"
-   },
-   "bugs": {
-      "url": "http://support.chargebee.com",
-      "email": "support@chargebee.com"
-   },
-   "licenses": [
-      {
-         "type": "MIT",
-         "url": "http://github.com/chargebee/chargebee-typescript/blob/master/LICENSE"
-      }
-   ]
+  "name": "repzo-chargebee",
+  "description": "SDK wrapper for the Chargebee TypeScript library",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Repzo/chargebee-typescript",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "run-s -l clean compile copy",
+    "clean": "rimraf dist coverage",
+    "compile": "tsc",
+    "lint": "eslint \"./**/*.{ts,js,json,yml}\" --fix",
+    "test": "jest",
+    "test.cov": "jest --coverage",
+    "test.watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mohammad Khamis",
+    "email": "Mohammad.khamis@repzoapp.com"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Repzo/chargebee-typescript"
+  },
+  "engines": {
+    "node": ">= 14.15"
+  },
+  "dependencies": {
+    "chargebee-typescript": "^2.0.9",
+    "tslib": "^2.0.3"
+  },
+  "devDependencies": {
+    "@pliancy/eslint-config-ts": "0.0.5",
+    "@types/jest": "27.0.1",
+    "@types/node": "15.12.3",
+    "cpy-cli": "3.1.1",
+    "husky": "7.0.2",
+    "jest": "27.1.1",
+    "npm-run-all": "4.1.5",
+    "open-cli": "7.0.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.5",
+    "typescript": "4.4.2"
+  },
+  "volta": {
+    "node": "14.17.6",
+    "yarn": "1.22.11"
+  }
 }

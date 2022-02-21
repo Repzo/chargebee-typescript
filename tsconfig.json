@@ -1,12 +1,20 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2015",
-    "declaration": true,
-    "outDir": "./lib"
-  },
-  "include": [
-    "src/**/*"
-  ]
+    "compilerOptions": {
+        "lib": ["ES2020", "dom"],
+        "module": "commonjs",
+        "target": "ES2020",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "checkJs": true,
+        "importHelpers": true,
+        "jsx": "react",
+        "strict": true,
+        "pretty": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "declaration": true
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["__fixtures__", "**/*.test.ts", "**/*.spec.ts", "**/*/__mocks__"]
 }
-
